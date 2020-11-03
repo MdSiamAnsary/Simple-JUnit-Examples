@@ -4,11 +4,53 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import packageSourceCode.ArithmaticClass;
+
 public class ArithmaticClassTestCase {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void methodAddTest1()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodAdd(10 , 20);
+		int expected = 30 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodAddTest2()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodAdd(10 , 20);
+		int expected = 30 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodAddTest3()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodAdd(10 , 20);
+		int expected = 30 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodAddTest4()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodAdd(10 , 20);
+		int expected = 30 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodAddTest5()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodAdd(10 , 20);
+		int expected = 30 ;
+		assertEquals(expected, actual);
 	}
 
 }
