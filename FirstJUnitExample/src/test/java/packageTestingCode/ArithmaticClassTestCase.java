@@ -23,7 +23,7 @@ public class ArithmaticClassTestCase {
 		ArithmaticClass arithmaticClass = new ArithmaticClass();
 		int actual = arithmaticClass.methodAdd(10 , 20);
 		int expected = 40 ;
-		assertEquals(expected, actual);
+		assertEquals(expected, actual); // This should fail
 	}
 	
 	@Test
