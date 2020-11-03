@@ -3,4 +3,17 @@
   <groupId>MdSiamAnsary</groupId>
   <artifactId>VoidMethodPrintTesting</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  
+  	<!-- https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules -->
+	<dependency>
+    	<groupId>com.github.stefanbirkner</groupId>
+    	<artifactId>system-rules</artifactId>
+    	<version>1.19.0</version>
+    	<scope>test</scope>
+	</dependency>
+  
+  </dependencies>
+  
 </project>
