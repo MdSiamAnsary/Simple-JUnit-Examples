@@ -22,7 +22,7 @@ public class ArithmaticClassTestCase {
 	{
 		ArithmaticClass arithmaticClass = new ArithmaticClass();
 		int actual = arithmaticClass.methodAdd(10 , 20);
-		int expected = 30 ;
+		int expected = 40 ;
 		assertEquals(expected, actual);
 	}
 	
@@ -30,8 +30,8 @@ public class ArithmaticClassTestCase {
 	public void methodAddTest3()
 	{
 		ArithmaticClass arithmaticClass = new ArithmaticClass();
-		int actual = arithmaticClass.methodAdd(10 , 20);
-		int expected = 30 ;
+		int actual = arithmaticClass.methodAdd(10 , 2);
+		int expected = 12 ;
 		assertEquals(expected, actual);
 	}
 	
@@ -39,8 +39,8 @@ public class ArithmaticClassTestCase {
 	public void methodAddTest4()
 	{
 		ArithmaticClass arithmaticClass = new ArithmaticClass();
-		int actual = arithmaticClass.methodAdd(10 , 20);
-		int expected = 30 ;
+		int actual = arithmaticClass.methodAdd(0 , 20);
+		int expected = 20 ;
 		assertEquals(expected, actual);
 	}
 	
@@ -48,8 +48,17 @@ public class ArithmaticClassTestCase {
 	public void methodAddTest5()
 	{
 		ArithmaticClass arithmaticClass = new ArithmaticClass();
-		int actual = arithmaticClass.methodAdd(10 , 20);
-		int expected = 30 ;
+		int actual = arithmaticClass.methodAdd(-90 , 20);
+		int expected = -70 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodSubTest1()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodSub(10 , 20);
+		int expected = -10 ;
 		assertEquals(expected, actual);
 	}
 
