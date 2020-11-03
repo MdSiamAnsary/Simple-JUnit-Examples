@@ -17,74 +17,95 @@ class SourceCodeClassTestCase {
 
 	private final PrintStream standardOut = System.out;
 	private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
-	 
-	
+
+
 	// ---------------------------------------------------------------------------------------
 	@BeforeEach
 	public void setUpTestId1() {
-	    System.setOut(new PrintStream(outputStreamCaptor));
+		System.setOut(new PrintStream(outputStreamCaptor));
 	}
-	
+
 	@Test
-	void methodTestId1()												// Test Passed											
+	void methodTestId1()		// Test Passed											
 	{
-	    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
-	    sourceCodeClassObject.method();
-	        
-	    Assert.assertEquals("Hello World", outputStreamCaptor.toString().trim());
+		SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
+		sourceCodeClassObject.method();
+
+		Assert.assertEquals("Hello World", outputStreamCaptor.toString().trim());
 	}
-	
+
 	@AfterEach
 	public void tearDownTestId1() {
-	    System.setOut(standardOut);
+		System.setOut(standardOut);
 	}
 	// ---------------------------------------------------------------------------------------
-	
-	
-	
-	
+
+
+
+
 	// ---------------------------------------------------------------------------------------
 	@BeforeEach
 	public void setUpTestId2() {
-	    System.setOut(new PrintStream(outputStreamCaptor));
+		System.setOut(new PrintStream(outputStreamCaptor));
 	}
-	
+
 	@Test
-	void methodTestId2()												// Test Failed
+	void methodTestId2()		// Test Failed
 	{
-	    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
-	    sourceCodeClassObject.method();
-	        
-	    Assert.assertEquals("Hello World", outputStreamCaptor.toString());
+		SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
+		sourceCodeClassObject.method();
+
+		Assert.assertEquals("Hello World", outputStreamCaptor.toString());
 	}
-	
+
 	@AfterEach
 	public void tearDownTestId2() {
-	    System.setOut(standardOut);
+		System.setOut(standardOut);
 	}
 	// ---------------------------------------------------------------------------------------
-	
-	
+
+
 	// ---------------------------------------------------------------------------------------
-		@BeforeEach
-		public void setUpTestId3() {
-		    System.setOut(new PrintStream(outputStreamCaptor));
-		}
-		
-		@Test
-		void methodTestId3()												// Test Failed
-		{
-		    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
-		    sourceCodeClassObject.method();
-		        
-		    Assert.assertEquals("Hello World\n", outputStreamCaptor.toString().trim());
-		}
-		
-		@AfterEach
-		public void tearDownTestId3() {
-		    System.setOut(standardOut);
-		}
-		// ---------------------------------------------------------------------------------------
+	@BeforeEach
+	public void setUpTestId3() {
+		System.setOut(new PrintStream(outputStreamCaptor));
+	}
+
+	@Test
+	void methodTestId3()		// Test Failed
+	{
+		SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
+		sourceCodeClassObject.method();
+
+		Assert.assertEquals("Hello World\n", outputStreamCaptor.toString().trim());
+	}
+
+	@AfterEach
+	public void tearDownTestId3() {
+		System.setOut(standardOut);
+	}
+	// ---------------------------------------------------------------------------------------
+
+	// ---------------------------------------------------------------------------------------
+	@BeforeEach
+	public void setUpTestId4() {
+		System.setOut(new PrintStream(outputStreamCaptor));
+	}
+
+	@Test
+	void methodTwoTestId4()		// Test Passed							
+	{
+		SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
+		sourceCodeClassObject.methodTwo();
+
+		Assert.assertEquals("Hello World", outputStreamCaptor.toString());
+	}
+
+	@AfterEach
+	public void tearDownTestId4() {
+		System.setOut(standardOut);
+	}
+	// ---------------------------------------------------------------------------------------
 
 
 }

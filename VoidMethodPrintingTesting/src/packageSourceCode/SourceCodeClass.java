@@ -6,5 +6,10 @@ public class SourceCodeClass {
 	{
 		System.out.println("Hello World");
 	}
+	
+	public void methodTwo()
+	{
+		System.out.print("Hello World");
+	}
 
 }
