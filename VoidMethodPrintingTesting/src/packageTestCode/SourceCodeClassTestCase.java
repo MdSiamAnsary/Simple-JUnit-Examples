@@ -26,7 +26,7 @@ class SourceCodeClassTestCase {
 	}
 	
 	@Test
-	void methodTestId1() 
+	void methodTestId1()												// Test Passed											
 	{
 	    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
 	    sourceCodeClassObject.method();
@@ -50,7 +50,7 @@ class SourceCodeClassTestCase {
 	}
 	
 	@Test
-	void methodTestId2() 
+	void methodTestId2()												// Test Failed
 	{
 	    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
 	    sourceCodeClassObject.method();
@@ -72,7 +72,7 @@ class SourceCodeClassTestCase {
 		}
 		
 		@Test
-		void methodTestId3() 
+		void methodTestId3()												// Test Failed
 		{
 		    SourceCodeClass sourceCodeClassObject = new SourceCodeClass();
 		    sourceCodeClassObject.method();
