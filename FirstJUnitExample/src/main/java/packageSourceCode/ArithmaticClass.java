@@ -19,6 +19,7 @@ public class ArithmaticClass {
 	
 	public int methodDiv(int a, int b)
 	{
+		
 		return a / b ;
 	}
 

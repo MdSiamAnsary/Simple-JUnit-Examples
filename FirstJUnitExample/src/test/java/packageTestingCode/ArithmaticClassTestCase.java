@@ -106,5 +106,23 @@ public class ArithmaticClassTestCase {
 		int expected = 00 ;
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void methodDivTest1()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodDiv(10 , 20);
+		int expected = 0 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodDivTest2()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodDiv(20 , 20);
+		int expected = 1 ;
+		assertEquals(expected, actual);
+	}
 
 }
