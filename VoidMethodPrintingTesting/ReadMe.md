@@ -5,17 +5,6 @@ Unit Testing of System.out.println() with JUnit
 
 by [Jonathan Cook](https://www.baeldung.com/author/jonathan-cook/ "Posts by Jonathan Cook")
 
--   [Java](https://www.baeldung.com/category/java/)+
--   [Testing](https://www.baeldung.com/category/testing/)
-
--   [JUnit](https://www.baeldung.com/tag/junit/)
-
-Java Top
-
-### **I just announced the new *Learn Spring* course, focused on the fundamentals of Spring 5 and Spring Boot 2:**
-
-**[\>\> CHECK OUT THE COURSE](/ls-course-start)**
-
 **1. Overview**
 ---------------
 
