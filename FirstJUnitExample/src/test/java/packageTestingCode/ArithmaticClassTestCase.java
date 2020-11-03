@@ -61,5 +61,50 @@ public class ArithmaticClassTestCase {
 		int expected = -10 ;
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void methodSubTest2()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodSub(100 , -20);
+		int expected = 120 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodSubTest3()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodSub(0 , 20);
+		int expected = -20 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodMulTest1()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodMul(10 , 20);
+		int expected = 200 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodMulTest2()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodMul(-2 , 20);
+		int expected = -40 ;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void methodMulTest3()
+	{
+		ArithmaticClass arithmaticClass = new ArithmaticClass();
+		int actual = arithmaticClass.methodMul(0 , 20);
+		int expected = 00 ;
+		assertEquals(expected, actual);
+	}
 
 }
