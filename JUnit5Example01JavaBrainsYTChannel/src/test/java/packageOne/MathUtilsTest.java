@@ -11,8 +11,8 @@ class MathUtilsTest {
 	{
 		MathUtils mathUtils = new MathUtils();
 		int actual = mathUtils.add(10, 20);
-		int expected = 30;
-		assertEquals(expected, actual);
+		int expected = 20;
+		assertEquals(expected, actual, "Add method");
 	}
 
 }
