@@ -13,7 +13,7 @@ class MathUtilsTest {
 	{
 		MathUtils mathUtils= new MathUtils();
 		
-		int expected = 25;
+		int expected = 24;
 		int actual = mathUtils.add(12, 12);
 		
 		assertEquals(expected, actual);
