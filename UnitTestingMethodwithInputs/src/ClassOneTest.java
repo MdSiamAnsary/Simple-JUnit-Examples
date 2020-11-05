@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.Test;
+
+import org.junit.Test; // JUnit 4
 
 //import org.junit.jupiter.api.Test;
 //This has to be commented out
